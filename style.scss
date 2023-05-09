@@ -2,14 +2,14 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   font-size: 14px;
   color: #505050;
 }
 
-p {
+* {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -18,10 +18,6 @@ a {
 
 a:visited {
   color: #505050;
-}
-
-h6 {
-  margin: 0;
 }
 
 .header-block {
@@ -264,7 +260,7 @@ main {
     align-items: center;
   }
 
-  &__navigation-item > div > span {
+  &__navigation-item > div:nth-child(odd) > span {
     background-color: #E33939;
     color: #FFFFFF;
     font-size: 12px;
@@ -273,7 +269,11 @@ main {
     text-align: center;
   }
 
-  &__navigation-item > div > p {
+  &__navigation-item > div:nth-child(1) > span {
+    background-color: #47B091;
+  }
+
+  &__navigation-item > div:nth-child(2) > span {
     font-size: 12px;
     color: #8F8F8F;
   }
@@ -378,7 +378,7 @@ main {
     gap: 8px;
   }
 
-  &__title > div > img {
+  &__title img {
     cursor: pointer;
   }
 
