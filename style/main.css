@@ -1,0 +1,59 @@
+.main-block {
+  background-color: #F1F1F1;
+}
+.main-block__photos {
+  background-color: #FFFFFF;
+  width: 1064px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.main-block__photos a {
+  color: #5095EC;
+}
+.main-block__photos > div:nth-child(3) > span {
+  color: #8F8F8F;
+}
+.main-block__photos > div:nth-child(3) > span > span {
+  font-style: italic;
+}
+.main-block__photos > div:nth-child(4) span {
+  font-size: 16px;
+}
+.main-block__item {
+  background-color: #FFFFFF;
+  font-size: 16px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  width: 1064px;
+}
+.main-block__item img:last-child {
+  cursor: pointer;
+}
+
+.accordion {
+  width: 100%;
+  background-color: #F1F1F1;
+}
+
+.accordion-item, .accordion-item:focus, .accordion-item:active {
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #505050;
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button, .accordion-button:focus {
+  box-shadow: none;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  max-width: 1440px;
+  margin: auto;
+  font-size: 14px;
+  color: #505050;
+}
+
+button {
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #505050;
+}
+
+.arrow-active {
+  transform: rotate(180deg);
+}
+
+.inactive {
+  display: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */
