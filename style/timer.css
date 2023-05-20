@@ -1,0 +1,14 @@
+.main-block {
+  background-color: #F1F1F1;
+}
+
+.time-block {
+  background-color: #FFFFFF;
+  font-size: 16px;
+}
+
+.time-block > img {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=timer.css.map */
