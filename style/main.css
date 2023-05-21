@@ -3,7 +3,7 @@
 }
 .main-block__photos {
   background-color: #FFFFFF;
-  width: 1064px;
+  max-width: 1064px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 .main-block__photos a {
@@ -22,7 +22,7 @@
   background-color: #FFFFFF;
   font-size: 16px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-  width: 1064px;
+  max-width: 1064px;
 }
 .main-block__item img:last-child {
   cursor: pointer;
@@ -54,6 +54,31 @@
   padding-left: 0;
   background-color: #FFFFFF;
   border: none;
+}
+
+@media (max-width: 1420px) {
+  .main-block__container {
+    width: calc(100% - 300px);
+  }
+}
+@media (max-width: 800px) {
+  .main-block {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 30px;
+  }
+  .main-block__container {
+    width: 100%;
+  }
+  .main-block__info {
+    width: 100% !important;
+  }
+}
+@media (max-width: 450px) {
+  .accordion-button {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

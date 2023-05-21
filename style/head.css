@@ -22,4 +22,19 @@
   background-color: #F1F1F1 !important;
 }
 
+@media (max-width: 730px) {
+  .header-block__down {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-block__up > div:nth-child(1) {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .header-block__up > div:nth-child(1) > p > span {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=head.css.map */
