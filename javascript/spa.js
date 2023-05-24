@@ -108,7 +108,7 @@ function btnActive3() {
 /////////////// Функции отрисовки страниц по клику //////////////////
 
 async function html1() {
-    let text = (await (await fetch('/test1/activity.html')).text());
+    let text = (await (await fetch('/weebee1/activity.html')).text());
     container.innerHTML = text;
 
     let arrow1 = document.getElementById('arrow1')
@@ -168,22 +168,15 @@ async function html1() {
 }
 html1();
 
-
-let routers = {
- '/test1/activity.html' : '/weebee1/activity.html',
- '/test1/map.html' : '/weebee1/map.html',
- '/test1/time.html' : '/weebee1/time.html'
-}
-
 activity1.addEventListener('click', function (event) {
     event.preventDefault();
     clearInterval(textAll);
-    history.pushState({routers}, '', '/weebee1/activity.html');
+    history.pushState('', '', '/weebee1/activity.html');
     html1();
 })
 
 async function html2() {
-    let text = (await (await fetch('/test1/map.html')).text());
+    let text = (await (await fetch('/weebee1/map.html')).text());
     container.innerHTML = text;
 }
 
@@ -204,7 +197,7 @@ function init(){
 map1.addEventListener('click', function (event) {
     event.preventDefault();
     clearInterval(textAll);
-    history.pushState({routers}, '', '/weebee1/map.html');
+    history.pushState('', '', '/weebee1/map.html');
     async function go() {
        await html2();
        await init();
@@ -213,7 +206,7 @@ map1.addEventListener('click', function (event) {
 })
 
 async function html3() {
-    let text = (await (await fetch('/test1/time.html')).text());
+    let text = (await (await fetch('/weebee1/time.html')).text());
     container.innerHTML = text;
     textAll = setInterval(function () {
         timerSecText();
@@ -224,7 +217,7 @@ async function html3() {
 
 time1.addEventListener('click', function (event) {
     event.preventDefault();
-    history.pushState({routers}, '', '/weebee1/time.html')
+    history.pushState('', '', '/weebee1/time.html')
     html3();
 })
 
