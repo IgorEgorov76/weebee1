@@ -170,15 +170,15 @@ html1();
 
 
 let routers = {
- '/test1/activity.html' : '/weebee1/activity',
- '/test1/map.html' : '/weebee1/map',
- '/test1/time.html' : '/weebee1/time'
+ '/test1/activity.html' : '/weebee1/activity.html',
+ '/test1/map.html' : '/weebee1/map.html',
+ '/test1/time.html' : '/weebee1/time.html'
 }
 
 activity1.addEventListener('click', function (event) {
     event.preventDefault();
     clearInterval(textAll);
-    history.pushState({routers}, '', '/weebee1/activity');
+    history.pushState({routers}, '', '/weebee1/activity.html');
     html1();
 })
 
@@ -204,7 +204,7 @@ function init(){
 map1.addEventListener('click', function (event) {
     event.preventDefault();
     clearInterval(textAll);
-    history.pushState({routers}, '', '/weebee1/map');
+    history.pushState({routers}, '', '/weebee1/map.html');
     async function go() {
        await html2();
        await init();
@@ -224,7 +224,7 @@ async function html3() {
 
 time1.addEventListener('click', function (event) {
     event.preventDefault();
-    history.pushState({routers}, '', '/weebee1/time')
+    history.pushState({routers}, '', '/weebee1/time.html')
     html3();
 })
 
